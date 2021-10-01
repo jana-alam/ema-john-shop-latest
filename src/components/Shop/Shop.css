@@ -1,0 +1,12 @@
+.shop-container {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  padding: 10px;
+}
+.product-container {
+  border-right: 2px solid lightgray;
+}
+
+.cart-container {
+  padding: 0 5px;
+}
