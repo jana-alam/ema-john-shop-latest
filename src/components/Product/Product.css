@@ -7,6 +7,9 @@
 .product-info {
   padding-left: 15px;
 }
+.product-info h3 {
+  color: blueviolet;
+}
 
 button {
   padding: 10px 50px;
