@@ -26,4 +26,22 @@ const addToDb = (id) => {
   updateDb(shopping_cart);
 };
 
-export { addToDb };
+// getStored Cart
+
+const getStoredCart = () => {
+  const exist = getDb();
+  return exist ? JSON.parse(exist) : {};
+};
+
+// remove from database
+const removeFromDb = (id) => {
+  const exists = getDb();
+  if (!exists) {
+  } else {
+    const shopping_cart = JSON.parse(exists);
+    delete shopping_cart[id];
+    updateDb(shopping_cart);
+  }
+};
+
+export { addToDb, getStoredCart, removeFromDb as deleteFromDb };
